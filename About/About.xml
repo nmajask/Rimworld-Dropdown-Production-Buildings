@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Dropdown Production Buildings</name>
+  <author>Nmajask</author>
+  <description>Combines non-stuffable production building of the same type but different fuel types (IE fueled and electric stoves) into one dropdown menu.</description>
+  <url></url>
+  <packageId>Nmajask.DropdownProductionBuildings</packageId>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+</ModMetaData>

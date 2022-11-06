@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Helixien Gas Production</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+            <operations>
+                <!--Large Workstations -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Furniture Expanded - Production</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- Large Smithy -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="VFE_TableSmithyLargeGas"][not(designatorDropdown)]</xpath>
+                                <value>
+                                    <designatorDropdown>LargeSmithies</designatorDropdown>
+                                </value>
+                            </li>
+
+                            <!-- Large Stove -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="VFE_TableStoveLargeGas"][not(designatorDropdown)]</xpath>
+                                <value>
+                                    <designatorDropdown>LargeStoves</designatorDropdown>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+            </operations>
+        </match>
+	</Operation>
+</Patch>

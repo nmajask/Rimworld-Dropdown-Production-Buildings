@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="StandingLamp" or defName="TorchLamp"][not(designatorDropdown)]</xpath>
+        <value>
+            <designatorDropdown>Lamps</designatorDropdown>
+        </value>
+	</Operation>
+
+    <!-- Bellow are catagories that are required for multiple mods -->
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Appliances Expanded</li>
+			<li>Vanilla Helixien Gas Expanded</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="SunLamp"][not(designatorDropdown)]</xpath>
+            <value>
+                <designatorDropdown>SunLamps</designatorDropdown>
+            </value>
+		</match>
+	</Operation>
+</Patch>

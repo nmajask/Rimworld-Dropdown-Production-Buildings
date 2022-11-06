@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded - Production</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+            <operations>
+                <!-- Cabinets -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="ToolCabinet" or defName="VFE_DrugCabinet" or defName="VFE_MachiningCabinet" or defName="VFE_SmithyCabinet" or defName="VFE_KitchenSinkCabinet" or defName="VFE_TailorCabinet" or defName="VFE_FabricationCabinet"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>Cabinets</designatorDropdown>
+                    </value>
+                </li>
+
+
+                <!-- Smelters -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VFE_FueledSmelter"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>Smelters</designatorDropdown>
+                    </value>
+                </li>
+
+
+                <!--Large Workstations -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Appliances Expanded</li>
+                        <li>Helixien Gas Production</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- Large Smithy -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="VFE_TableSmithyLarge"][not(designatorDropdown)]</xpath>
+                                <value>
+                                    <designatorDropdown>LargeSmithies</designatorDropdown>
+                                </value>
+                            </li>
+
+                            <!-- Large Stove -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="VFE_TableStoveLarge"][not(designatorDropdown)]</xpath>
+                                <value>
+                                    <designatorDropdown>LargeStoves</designatorDropdown>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+            </operations>
+        </match>
+	</Operation>
+</Patch>

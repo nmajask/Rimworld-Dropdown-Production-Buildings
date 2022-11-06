@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded - Power</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+			<operations>
+				<!-- Batteries -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="Battery" or defName="VFE_LargeBattery" or defName="VFE_SmallBattery"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>Batteries</designatorDropdown>
+                    </value>
+				</li>
+                
+				<!-- Advanced Batteries -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="VFE_AdvancedBattery" or defName="VFE_LargeAdvancedBattery" or defName="VFE_SmallBattery"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>AdvancedBatteries</designatorDropdown>
+                    </value>
+				</li>
+
+
+				<!-- Portable Generators -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="VFE_PortableWoodFiredGenerator" or defName="VFE_PortableChemfuelPoweredGenerator"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>PortableFueledGenerators</designatorDropdown>
+                    </value>
+				</li>
+				<!-- Industrial Generators -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="VFE_IndustrialWoodFiredGenerator" or defName="VFE_IndustrialChemfuelPoweredGenerator"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>IndustrialFueledGenerators</designatorDropdown>
+                    </value>
+				</li>
+
+
+				<!-- Wind Terbines -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="WindTurbine" or defName="VFE_AdvancedWindTurbine"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>WindTurbines</designatorDropdown>
+                    </value>
+				</li>
+
+				<!-- Solar Generators -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="SolarGenerator" or defName="VFE_AdvancedSolarGenerator"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>SolarGenerators</designatorDropdown>
+                    </value>
+				</li>
+
+				<!-- Watermill Generators -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="WatermillGenerator" or defName="VFE_AdvancedWatermillGenerator"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>WatermillGenerators</designatorDropdown>
+                    </value>
+				</li>
+
+				<!-- Geothermal Generators -->
+				<li Class="PatchOperationAdd">
+					<xpath>/Defs/ThingDef[defName="GeothermalGenerator" or defName="VPE_AdvancedGeothermalGenerator"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>GeothermalGenerators</designatorDropdown>
+                    </value>
+				</li>
+			</operations>
+		</match>
+	</Operation>
+</Patch>

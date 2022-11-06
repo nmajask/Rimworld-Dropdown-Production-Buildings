@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ElectricStove" or defName="FueledStove"][not(designatorDropdown)]</xpath>
+        <value>
+            <designatorDropdown>Stoves</designatorDropdown>
+        </value>
+	</Operation>
+	<Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[defName="ElectricSmithy" or defName="FueledSmithy"][not(designatorDropdown)]</xpath>
+        <value>
+            <designatorDropdown>Smithies</designatorDropdown>
+        </value>
+	</Operation>
+
+    <!-- Bellow are catagories that are required for multiple mods -->
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Appliances Expanded</li>
+			<li>Vanilla Furniture Expanded - Production</li>
+			<li>Vanilla Helixien Gas Expanded</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="ElectricSmelter"][not(designatorDropdown)]</xpath>
+            <value>
+                <designatorDropdown>Smelters</designatorDropdown>
+            </value>
+		</match>
+	</Operation>
+</Patch>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Helixien Gas Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+            <operations>
+                <!-- PodLaunchers -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="PodLauncher" or defName="VHGE_GasOperatedPodLauncher"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>PodLaunchers</designatorDropdown>
+                    </value>
+                </li>
+
+                
+                <!-- Generators -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VHGE_HelixienGenerator"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>FueledGenerators</designatorDropdown>
+                    </value>
+                </li>
+
+                <!-- Industrial Generators -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Furniture Expanded - Power</li>
+                    </mods>
+                    <match Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="VHGE_IndustrialHelixienGenerator"][not(designatorDropdown)]</xpath>
+                        <value>
+                            <designatorDropdown>IndustrialFueledGenerators</designatorDropdown>
+                        </value>
+                    </match>
+                </li>
+
+                
+                <!-- Smelters -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VHGE_GasPoweredSmelter"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>Smelters</designatorDropdown>
+                    </value>
+                </li>
+
+                <!-- Stoves -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VHGE_GasPoweredStove"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>Stoves</designatorDropdown>
+                    </value>
+                </li>
+
+                <!-- Smithies -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VHGE_GasPoweredSmithy"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>Smithies</designatorDropdown>
+                    </value>
+                </li>
+                
+
+                <!-- Refineries -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="BiofuelRefinery" or defName="VHGE_GasPoweredRefinery"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>Refineries</designatorDropdown>
+                    </value>
+                </li>
+
+
+                <!-- Lamps -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VHGE_GasLamp"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>Lamps</designatorDropdown>
+                    </value>
+                </li>
+
+                <!-- Sun Lamps -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VHGE_GasSunLamp"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>SunLamps</designatorDropdown>
+                    </value>
+                </li>
+
+                <!-- Wall Lamps -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Appliances Expanded</li>
+                        <li>Vanilla Factions Expanded - Ancients</li>
+                        <li>Vanilla Factions Expanded - Medieval</li>
+                    </mods>
+                    <match Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="VHGE_GasWallLamp"][not(designatorDropdown)]</xpath>
+                        <value>
+                            <designatorDropdown>WallLamps</designatorDropdown>
+                        </value>
+                    </match>
+                </li>
+
+                <!-- Floodlights -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Appliances Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="VHGE_GasFloodlight"][not(designatorDropdown)]</xpath>
+                        <value>
+                            <designatorDropdown>Floodlights</designatorDropdown>
+                        </value>
+                    </match>
+                </li>
+
+
+                <!-- Coolers -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VHGE_GasCooler"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>Coolers</designatorDropdown>
+                    </value>
+                </li>
+
+                <!-- Heaters -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="VHGE_GasHeater"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>Heaters</designatorDropdown>
+                    </value>
+                </li>
+            </operations>
+        </match>
+	</Operation>
+</Patch>

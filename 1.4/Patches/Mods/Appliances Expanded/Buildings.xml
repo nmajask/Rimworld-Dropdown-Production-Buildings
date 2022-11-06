@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Appliances Expanded</li>
+		</mods>
+		<match Class="PatchOperationSequence">
+            <operations>
+                <!-- Turbines -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="CA_WoodFiredTurbine" or defName="CA_ChemfuelTurbine"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>Turbines</designatorDropdown>
+                    </value>
+                </li>
+
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Helixien Gas Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="CA_GasTurbine"][not(designatorDropdown)]</xpath>
+                        <value>
+                            <designatorDropdown>Turbines</designatorDropdown>
+                        </value>
+                    </match>
+                </li>
+
+
+                <!-- Smelters -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="CA_ChemfuelSmelter"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>Smelters</designatorDropdown>
+                    </value>
+                </li>
+
+                <!-- Stoves -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="CE_ChemfuelStove"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>Stoves</designatorDropdown>
+                    </value>
+                </li>
+
+                <!-- Smithies -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="CA_ChemfuelSmithy"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>Smithies</designatorDropdown>
+                    </value>
+                </li>
+
+
+                <!-- Lamps -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="CA_ChemfuelStandingLamp"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>Lamps</designatorDropdown>
+                    </value>
+                </li>
+
+                <!-- Sun Lamps -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="CA_Sunlamp"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>SunLamps</designatorDropdown>
+                    </value>
+                </li>
+
+                <!-- Floodlights -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Helixien Gas Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationAdd">
+                        <xpath>/Defs/ThingDef[defName="CA_ChemfuelFloodlight"][not(designatorDropdown)]</xpath>
+                        <value>
+                            <designatorDropdown>Floodlights</designatorDropdown>
+                        </value>
+                    </match>
+                </li>
+
+
+                <!-- Coolers -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="CAS_ChemfuelCooler"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>Coolers</designatorDropdown>
+                    </value>
+                </li>
+
+                <!-- Heaters -->
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="CAS_ChemfuelHeater"][not(designatorDropdown)]</xpath>
+                    <value>
+                        <designatorDropdown>Heaters</designatorDropdown>
+                    </value>
+                </li>
+
+
+                <!-- Large Workstations -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Furniture Expanded - Production</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- Large Smithies -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="CE_FueledSmithyLarge"][not(designatorDropdown)]</xpath>
+                                <value>
+                                    <designatorDropdown>LargeSmithies</designatorDropdown>
+                                </value>
+                            </li>
+
+                            <!-- Large Stoves -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="CA_ChemfuelStoveLarge"][not(designatorDropdown)]</xpath>
+                                <value>
+                                    <designatorDropdown>LargeStoves</designatorDropdown>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+
+
+                <!-- VCE -->
+                <li Class="PatchOperationFindMod">
+                    <mods>
+                        <li>Vanilla Cooking Expanded</li>
+                    </mods>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <!-- Pots -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="CE_ChemfuelPot"][not(designatorDropdown)]</xpath>
+                                <value>
+                                    <designatorDropdown>Pots</designatorDropdown>
+                                </value>
+                            </li>
+
+                            <!-- Friers -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="VCE_DeepFrier" or defName="CE_ChemfuelDeepFrier" or defName="CE_AirFryer"][not(designatorDropdown)]</xpath>
+                                <value>
+                                    <designatorDropdown>Deepfryers</designatorDropdown>
+                                </value>
+                            </li>
+
+                            <!-- Grills -->
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="VCE_Grill" or defName="CE_ChemfuelGrill"][not(designatorDropdown)]</xpath>
+                                <value>
+                                    <designatorDropdown>Grills</designatorDropdown>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                </li>
+            </operations>
+        </match>
+	</Operation>
+</Patch>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Core -->
+	<DesignatorDropdownGroupDef>
+		<defName>Stoves</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef>
+		<defName>Smithies</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef>
+		<defName>Lamps</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef>
+		<defName>FueledGenerators</defName>
+	</DesignatorDropdownGroupDef>
+
+	<!-- VFE: Power -->
+	<DesignatorDropdownGroupDef MayRequire="vanillaexpanded.vfepower">
+		<defName>PortableFueledGenerators</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef MayRequire="vanillaexpanded.vfepower">
+		<defName>IndustrialFueledGenerators</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef MayRequire="vanillaexpanded.vfepower">
+		<defName>Batteries</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef MayRequire="vanillaexpanded.vfepower">
+		<defName>AdvancedBatteries</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef MayRequire="vanillaexpanded.vfepower">
+		<defName>WindTurbines</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef MayRequire="vanillaexpanded.vfepower">
+		<defName>SolarGenerators</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef MayRequire="vanillaexpanded.vfepower">
+		<defName>WatermillGenerators</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef MayRequire="vanillaexpanded.vfepower">
+		<defName>GeothermalGenerators</defName>
+	</DesignatorDropdownGroupDef>
+
+	<!-- VFE: Production -->
+	<DesignatorDropdownGroupDef MayRequire="vanillaexpanded.vfeproduction">
+		<defName>Cabinets</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef MayRequire="vanillaexpanded.vfeproduction">
+		<defName>LargeStoves</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef MayRequire="vanillaexpanded.vfeproduction">
+		<defName>LargeSmithies</defName>
+	</DesignatorDropdownGroupDef>
+
+	<!-- Vanilla Cooking Expanded -->
+	<DesignatorDropdownGroupDef MayRequire="vanillaexpanded.vcooke">
+		<defName>Pots</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef MayRequire="vanillaexpanded.vcooke">
+		<defName>Deepfryers</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef MayRequire="vanillaexpanded.vcooke">
+		<defName>Grills</defName>
+	</DesignatorDropdownGroupDef>
+
+	<!-- VHGE -->
+	<DesignatorDropdownGroupDef MayRequire="VanillaExpanded.HelixienGas">
+		<defName>Refineries</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef MayRequire="VanillaExpanded.HelixienGas">
+		<defName>PodLaunchers</defName>
+	</DesignatorDropdownGroupDef>
+
+	<!-- VCE -->
+	<DesignatorDropdownGroupDef MayRequire="vanillaexpanded.vchemfuele">
+		<defName>ChemfuelInterfaces</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef MayRequire="vanillaexpanded.vchemfuele">
+		<defName>DeepchemInterfaces</defName>
+	</DesignatorDropdownGroupDef>
+
+	<!-- Appliances Expanded -->
+	<DesignatorDropdownGroupDef MayRequire="scpchemfuel.appliances">
+		<defName>Turbines</defName>
+	</DesignatorDropdownGroupDef>
+
+	<!-- Others -->
+	<!-- IDK how to do these more effeciently -->
+	<DesignatorDropdownGroupDef>
+		<defName>Smelters</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef>
+		<defName>SunLamps</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef>
+		<defName>WallLamps</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef>
+		<defName>Floodlights</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef>
+		<defName>Heaters</defName>
+	</DesignatorDropdownGroupDef>
+	<DesignatorDropdownGroupDef>
+		<defName>Coolers</defName>
+	</DesignatorDropdownGroupDef>
+
+</Defs>
