@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+    <!-- Bellow are catagories that are required for multiple mods -->
+    <Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Furniture Expanded - Production</li>
+			<li>Adeptus Mechanicus: Armoury</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+            <xpath>/Defs/ThingDef[defName="ToolCabinet"][not(designatorDropdown)]</xpath>
+            <value>
+                <designatorDropdown>Cabinets</designatorDropdown>
+            </value>
+		</match>
+	</Operation>
+</Patch>

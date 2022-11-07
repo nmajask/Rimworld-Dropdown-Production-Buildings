@@ -42,9 +42,6 @@
 
 	<!-- VFE: Production -->
 	<DesignatorDropdownGroupDef MayRequire="vanillaexpanded.vfeproduction">
-		<defName>Cabinets</defName>
-	</DesignatorDropdownGroupDef>
-	<DesignatorDropdownGroupDef MayRequire="vanillaexpanded.vfeproduction">
 		<defName>LargeStoves</defName>
 	</DesignatorDropdownGroupDef>
 	<DesignatorDropdownGroupDef MayRequire="vanillaexpanded.vfeproduction">
@@ -83,8 +80,16 @@
 		<defName>Turbines</defName>
 	</DesignatorDropdownGroupDef>
 
+	<!-- Adeptus Mechanicus: Armoury -->
+	<DesignatorDropdownGroupDef MayRequire="ogliss.admech.armoury">
+		<defName>OGBenches</defName>
+	</DesignatorDropdownGroupDef>
+
 	<!-- Others -->
 	<!-- IDK how to do these more effeciently -->
+	<DesignatorDropdownGroupDef>
+		<defName>Cabinets</defName>
+	</DesignatorDropdownGroupDef>
 	<DesignatorDropdownGroupDef>
 		<defName>Smelters</defName>
 	</DesignatorDropdownGroupDef>
